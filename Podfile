@@ -7,8 +7,6 @@ target 'Image-Fetcher' do
 
   # Pods for Image-Fetcher
   pod 'Alamofire'
-  pod 'Kingfisher'
-  pod 'RxSwift'
-  pod 'RxCocoa'
+  pod 'SDWebImage'
 
 end

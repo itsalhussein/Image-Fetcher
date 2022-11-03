@@ -12,6 +12,14 @@
 		19CB13FB29128D4200C1D3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CB13F929128D4200C1D3F5 /* LaunchScreen.storyboard */; };
 		19CB140429128E4F00C1D3F5 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CB140229128E4F00C1D3F5 /* PhotosVC.swift */; };
 		19CB140529128E4F00C1D3F5 /* PhotosVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19CB140329128E4F00C1D3F5 /* PhotosVC.xib */; };
+		19CFCC062913BB3B00486E2C /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFCC042913BB3B00486E2C /* PhotoCell.swift */; };
+		19CFCC072913BB3B00486E2C /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19CFCC052913BB3B00486E2C /* PhotoCell.xib */; };
+		19DB0DA02913B2570048075F /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DB0D9F2913B2570048075F /* PhotosViewModel.swift */; };
+		19DB0DA22913B4C10048075F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DB0DA12913B4C10048075F /* PhotoModel.swift */; };
+		19F3D2AA2913BF9400DB6991 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3D2A92913BF9400DB6991 /* ApiClient.swift */; };
+		19F3D2AC2913BFA000DB6991 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3D2AB2913BFA000DB6991 /* ApiRouter.swift */; };
+		19F3D2AE2913BFAC00DB6991 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3D2AD2913BFAC00DB6991 /* API.swift */; };
+		19F3D2B12913C24600DB6991 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3D2B02913C24600DB6991 /* Extensions.swift */; };
 		6306DD64C225D23C596A57ED /* Pods_Image_Fetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B2E76A1F1B326AD3520111 /* Pods_Image_Fetcher.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +32,14 @@
 		19CB13FC29128D4200C1D3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19CB140229128E4F00C1D3F5 /* PhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
 		19CB140329128E4F00C1D3F5 /* PhotosVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosVC.xib; sourceTree = "<group>"; };
+		19CFCC042913BB3B00486E2C /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		19CFCC052913BB3B00486E2C /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		19DB0D9F2913B2570048075F /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		19DB0DA12913B4C10048075F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		19F3D2A92913BF9400DB6991 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		19F3D2AB2913BFA000DB6991 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		19F3D2AD2913BFAC00DB6991 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		19F3D2B02913C24600DB6991 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		57D7AB12A1B3003700C8BBCC /* Pods-Image-Fetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image-Fetcher.release.xcconfig"; path = "Target Support Files/Pods-Image-Fetcher/Pods-Image-Fetcher.release.xcconfig"; sourceTree = "<group>"; };
 		FF3EAAA1D69783509B610D4D /* Pods-Image-Fetcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image-Fetcher.debug.xcconfig"; path = "Target Support Files/Pods-Image-Fetcher/Pods-Image-Fetcher.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +77,8 @@
 		19CB13ED29128D3C00C1D3F5 /* Image-Fetcher */ = {
 			isa = PBXGroup;
 			children = (
+				19F3D2AF2913C23400DB6991 /* Utilities */,
+				19F3D2A82913BF0400DB6991 /* Networking */,
 				19CB140829128E6F00C1D3F5 /* AppDelegate */,
 				19CB140729128E6300C1D3F5 /* MVVM */,
 				19CB13F729128D4200C1D3F5 /* Assets.xcassets */,
@@ -75,6 +93,7 @@
 			children = (
 				19CB140229128E4F00C1D3F5 /* PhotosVC.swift */,
 				19CB140329128E4F00C1D3F5 /* PhotosVC.xib */,
+				19CFCC082913BB4300486E2C /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,9 +117,54 @@
 		19CB140A291290BB00C1D3F5 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				19DB0D9E2913B2450048075F /* ViewModel */,
+				19DB0D9D2913B23D0048075F /* Model */,
 				19CB140629128E5700C1D3F5 /* View */,
 			);
 			path = Photos;
+			sourceTree = "<group>";
+		};
+		19CFCC082913BB4300486E2C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				19CFCC042913BB3B00486E2C /* PhotoCell.swift */,
+				19CFCC052913BB3B00486E2C /* PhotoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		19DB0D9D2913B23D0048075F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19DB0DA12913B4C10048075F /* PhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19DB0D9E2913B2450048075F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19DB0D9F2913B2570048075F /* PhotosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19F3D2A82913BF0400DB6991 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				19F3D2A92913BF9400DB6991 /* ApiClient.swift */,
+				19F3D2AB2913BFA000DB6991 /* ApiRouter.swift */,
+				19F3D2AD2913BFAC00DB6991 /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		19F3D2AF2913C23400DB6991 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				19F3D2B02913C24600DB6991 /* Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		DCA96156B8FD892D2065D996 /* Frameworks */ = {
@@ -117,7 +181,6 @@
 				FF3EAAA1D69783509B610D4D /* Pods-Image-Fetcher.debug.xcconfig */,
 				57D7AB12A1B3003700C8BBCC /* Pods-Image-Fetcher.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -181,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19CFCC072913BB3B00486E2C /* PhotoCell.xib in Resources */,
 				19CB13FB29128D4200C1D3F5 /* LaunchScreen.storyboard in Resources */,
 				19CB13F829128D4200C1D3F5 /* Assets.xcassets in Resources */,
 				19CB140529128E4F00C1D3F5 /* PhotosVC.xib in Resources */,
@@ -236,8 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DB0DA02913B2570048075F /* PhotosViewModel.swift in Sources */,
+				19F3D2B12913C24600DB6991 /* Extensions.swift in Sources */,
+				19CFCC062913BB3B00486E2C /* PhotoCell.swift in Sources */,
 				19CB13EF29128D3C00C1D3F5 /* AppDelegate.swift in Sources */,
+				19DB0DA22913B4C10048075F /* PhotoModel.swift in Sources */,
 				19CB140429128E4F00C1D3F5 /* PhotosVC.swift in Sources */,
+				19F3D2AA2913BF9400DB6991 /* ApiClient.swift in Sources */,
+				19F3D2AE2913BFAC00DB6991 /* API.swift in Sources */,
+				19F3D2AC2913BFA000DB6991 /* ApiRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

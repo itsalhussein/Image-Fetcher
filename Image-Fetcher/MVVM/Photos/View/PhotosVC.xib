@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotosVC" customModule="Image_Fetcher" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="u6T-Ca-ZEF" id="TXO-zz-7FQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
