@@ -75,6 +75,12 @@ extension PhotosVC : UITableViewDelegate, UITableViewDataSource, UITableViewData
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(viewModel.getPhotoItem(at: indexPath))")
+        guard let imageURL = viewModel.getPhotoItem(at: indexPath).url else { return }
+        let vm = PhotoDetailViewModel(imageURL: imageURL)
+        let vc = PhotoDetailVC(viewModel: vm)
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
     }
 }
 
