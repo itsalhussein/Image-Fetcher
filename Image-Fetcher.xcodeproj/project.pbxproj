@@ -20,7 +20,6 @@
 		19F3D2AA2913BF9400DB6991 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3D2A92913BF9400DB6991 /* ApiClient.swift */; };
 		19F3D2AC2913BFA000DB6991 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3D2AB2913BFA000DB6991 /* ApiRouter.swift */; };
 		19F3D2AE2913BFAC00DB6991 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3D2AD2913BFAC00DB6991 /* API.swift */; };
-		19F3D2B12913C24600DB6991 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3D2B02913C24600DB6991 /* Extensions.swift */; };
 		19F3D2B52914070500DB6991 /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3D2B32914070500DB6991 /* PhotoDetailVC.swift */; };
 		19F3D2B62914070500DB6991 /* PhotoDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F3D2B42914070500DB6991 /* PhotoDetailVC.xib */; };
 		6306DD64C225D23C596A57ED /* Pods_Image_Fetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B2E76A1F1B326AD3520111 /* Pods_Image_Fetcher.framework */; };
@@ -43,7 +42,6 @@
 		19F3D2A92913BF9400DB6991 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		19F3D2AB2913BFA000DB6991 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		19F3D2AD2913BFAC00DB6991 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		19F3D2B02913C24600DB6991 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		19F3D2B32914070500DB6991 /* PhotoDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailVC.swift; sourceTree = "<group>"; };
 		19F3D2B42914070500DB6991 /* PhotoDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoDetailVC.xib; sourceTree = "<group>"; };
 		57D7AB12A1B3003700C8BBCC /* Pods-Image-Fetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image-Fetcher.release.xcconfig"; path = "Target Support Files/Pods-Image-Fetcher/Pods-Image-Fetcher.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 		19CB13ED29128D3C00C1D3F5 /* Image-Fetcher */ = {
 			isa = PBXGroup;
 			children = (
-				19F3D2AF2913C23400DB6991 /* Utilities */,
 				19F3D2A82913BF0400DB6991 /* Networking */,
 				19CB140829128E6F00C1D3F5 /* AppDelegate */,
 				19CB140729128E6300C1D3F5 /* MVVM */,
@@ -164,14 +161,6 @@
 				19F3D2AD2913BFAC00DB6991 /* API.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		19F3D2AF2913C23400DB6991 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				19F3D2B02913C24600DB6991 /* Extensions.swift */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		19F3D2B2291406E600DB6991 /* PhotoDetail */ = {
@@ -343,7 +332,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19DB0DA02913B2570048075F /* PhotosViewModel.swift in Sources */,
-				19F3D2B12913C24600DB6991 /* Extensions.swift in Sources */,
 				19F3D2B52914070500DB6991 /* PhotoDetailVC.swift in Sources */,
 				19CFCC062913BB3B00486E2C /* PhotoCell.swift in Sources */,
 				19CB13EF29128D3C00C1D3F5 /* AppDelegate.swift in Sources */,
