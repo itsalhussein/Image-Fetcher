@@ -1,19 +1,18 @@
 //
-//  ViewController.swift
+//  PhotosVC.swift
 //  Image-Fetcher
 //
-//  Created by Hussein Anwar on 02/11/2022.
+//  Created by Hussein Anwar on 01/11/2022.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class PhotosVC: UIViewController {
+    //MARK: - Outlets
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
-
 }
-
